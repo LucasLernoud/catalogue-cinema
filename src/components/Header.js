@@ -6,8 +6,8 @@ const Header = () => {
     <div className="header">
       <nav>
         <ul>
-          <NavLink to="/"><li>Accueil</li></NavLink>
-          <NavLink to="/favoris"><li>Favoris</li></NavLink>
+          <NavLink to="/" className={(nav) => nav.isActive ? "nav-active" : ""}><li>Accueil</li></NavLink>
+          <NavLink to="/favoris" className={(nav) => nav.isActive ? "nav-active" : ""}><li>Favoris</li></NavLink>
         </ul>
       </nav>
       <h1>Catalogue Cinéma</h1>
