@@ -8,7 +8,7 @@ const Form = () => {
   useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/search/movie?api_key=ed82f4c18f2964e75117c2dc65e2161d&query=avenger&language=fr-FR`
+        `https://api.themoviedb.org/3/search/movie?api_key=b4d15bc97662697e2534d61b733bf5a7&query=avengers&language=fr-FR`
       )
       .then((res) => setMoviesData(res.data.results));
   }, []);
